@@ -1,9 +1,10 @@
 # The Factory Pattern
 
 ## 1. Description
-__[a]__ comes in two flavors: Factory Method & Abstract Factory
-__[b]__ two types of abstraction: Product (Pizza), Creator (PizzaStore)
-__[c]__ it encapsulates the creation of objects
+
+* comes in two flavors: Factory Method & Abstract Factory
+* two types of abstraction: Product (Pizza), Creator (PizzaStore)
+* it encapsulates the creation of objects
 
 ## 2. Factory Method
 * delegates creation of an Product (e.g. Pizza) to its subclasses

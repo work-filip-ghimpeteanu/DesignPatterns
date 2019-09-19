@@ -11,7 +11,9 @@
   <packaging>pom</packaging>
 
   <modules>
+      <module>observer</module>
     <module>factory</module>
+
   </modules>
 
   <properties>
