@@ -1,6 +1,6 @@
 package org.filip.dp.ingredients;
 
-public abstract class Dough {
+public class Pepperoni {
     @Override
     public String toString() {
         return this.getClass().getSimpleName();

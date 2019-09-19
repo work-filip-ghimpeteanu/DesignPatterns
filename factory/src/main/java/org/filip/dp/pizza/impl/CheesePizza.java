@@ -13,7 +13,7 @@ public class CheesePizza extends Pizza {
 
     @Override
     public void prepare() {
-        toppings    = ingredientsFactory.createToppings();
+        veggies     = ingredientsFactory.createVeggies();
         dough       = ingredientsFactory.createDough();
         sauce       = ingredientsFactory.createSauce();
         cheese      = ingredientsFactory.createCheese();

@@ -7,7 +7,6 @@ import org.filip.dp.store.impl.NewYorkPizzaStore;
  * This represents the Factory Method Pattern
  * - the createPizza represents the factory method
  * - the creation of Products is delegated to the subclasses
- *   {@link NewYorkPizzaStore}
  */
 public abstract class PizzaStore {
 

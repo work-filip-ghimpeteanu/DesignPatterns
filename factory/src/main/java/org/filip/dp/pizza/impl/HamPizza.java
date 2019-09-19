@@ -3,11 +3,11 @@ package org.filip.dp.pizza.impl;
 import org.filip.dp.ingredients.IngredientsFactory;
 import org.filip.dp.pizza.Pizza;
 
-public class PepperoniPizza extends Pizza {
+public class HamPizza extends Pizza {
 
     private IngredientsFactory ingredientsFactory;
 
-    public PepperoniPizza(IngredientsFactory ingredientsFactory) {
+    public HamPizza(IngredientsFactory ingredientsFactory) {
         this.ingredientsFactory = ingredientsFactory;
     }
 
@@ -16,8 +16,7 @@ public class PepperoniPizza extends Pizza {
         dough       = ingredientsFactory.createDough();
         sauce       = ingredientsFactory.createSauce();
         veggies     = ingredientsFactory.createVeggies();
-        cheese      = ingredientsFactory.createCheese();
-        pepperoni   = ingredientsFactory.createPepperoni();
+        ham         = ingredientsFactory.createHam();
         printPrepareMessage();
     }
 }

@@ -2,44 +2,43 @@ package org.filip.dp.ingredients.impl;
 
 import org.filip.dp.ingredients.*;
 
-public class NewYorkIngredientsFactory implements IngredientsFactory {
+public class ChicagoIngredientsFactory implements IngredientsFactory {
 
     @Override
     public Cheese createCheese() {
-        return new ReggianoCheese();
+        return new GorgonzolaCheese();
     }
 
     @Override
     public Dough createDough() {
-        return new ThinCrustDough();
+        return new ThickDough();
     }
 
     @Override
     public Sauce createSauce() {
-        return new MarinaraSauce();
+        return new PlumTomatoesSauce();
     }
 
     @Override
     public Pepperoni createPepperoni() {
-        return new SpicyPepperoni();
+        return new SweetPepperoni();
     }
 
     @Override
     public Clam createClam() {
-        return new FreshClams();
+        return new FrozenClams();
     }
 
     @Override
     public Ham createHam() {
-        return new ParmaHam();
+        return new SmokedHam();
     }
 
     @Override
     public Veggies[] createVeggies() {
         return new Veggies[] {
-                Veggies.GARLIC,
-                Veggies.MUSHROOM,
-                Veggies.SWEET_CORN
+                Veggies.TOMATOES,
+                Veggies.ONION,
         };
     }
 }
