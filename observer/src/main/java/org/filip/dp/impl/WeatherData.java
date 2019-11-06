@@ -11,7 +11,7 @@ import static java.lang.Math.abs;
 public class WeatherData implements Subject {
 
     private List<Observer> observers;
-    private boolean stateChanged = false;
+    private boolean stateChanged;
 
     private float pressure;
     private float temperature;
@@ -51,20 +51,18 @@ public class WeatherData implements Subject {
         return humidity;
     }
 
-    public void measurementsChanged() {
-        notifyObservers();
-    }
-
     public void setMeasurements(float temperature, float humidity, float pressure) {
         if (!smallChange(temperature, humidity, pressure)) {
-            setStateChanged();
+            stateChanged = true;
+        } else {
+            stateChanged = false;
         }
 
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
 
-        measurementsChanged();
+        notifyObservers();
     }
 
     private boolean smallChange(float temperature, float humidity, float pressure) {
@@ -73,9 +71,5 @@ public class WeatherData implements Subject {
         float pressureDiff = getPressure() - pressure;
 
         return abs(tempDiff) + abs(humidityDiff) + abs(pressureDiff) < 5;
-    }
-
-    public void setStateChanged() {
-        stateChanged = true;
     }
 }
