@@ -9,3 +9,4 @@ code for a particular Design Pattern.
 The Design Pattern covered are:
 * Factory (`factory` module)
 * Observer (`observer` module)
+* Strategy (`strategy` module)

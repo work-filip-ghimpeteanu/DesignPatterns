@@ -19,4 +19,4 @@
   - subject & observer can be reused independently of each other
  
 ## 3. Class Diagram
-![Factory](https://github.com/work-filip-ghimpeteanu/DesignPatterns/raw/master/observer/src/main/resources/Observer.png)
+![Observer](https://github.com/work-filip-ghimpeteanu/DesignPatterns/raw/master/observer/src/main/resources/Observer.png)
