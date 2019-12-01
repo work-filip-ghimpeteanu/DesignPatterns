@@ -10,3 +10,4 @@ The Design Pattern covered are:
 * Factory (`factory` module)
 * Observer (`observer` module)
 * Strategy (`strategy` module)
+* Decorator (`decorator` module)

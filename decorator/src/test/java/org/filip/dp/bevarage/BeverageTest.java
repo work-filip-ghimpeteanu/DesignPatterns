@@ -19,8 +19,7 @@ public class BeverageTest extends TestCase {
 
         System.out.println(String.format("Main class is %s", beverage.getClass().getSimpleName()));
 
-        System.out.println(String.format(ORDER_MSG,
-                beverage.getDescription(), beverage.cost()));
+        System.out.println(String.format(ORDER_MSG, beverage.getDescription(), beverage.cost()));
     }
 
 
@@ -30,8 +29,7 @@ public class BeverageTest extends TestCase {
 
         System.out.println(String.format("Main class is %s", beverage.getClass().getSimpleName()));
 
-        System.out.println(String.format(ORDER_MSG,
-                beverage.getDescription(), beverage.cost()));
+        System.out.println(String.format(ORDER_MSG, beverage.getDescription(), beverage.cost()));
     }
 
     @Test
@@ -40,7 +38,16 @@ public class BeverageTest extends TestCase {
 
         System.out.println(String.format("Main class is %s", beverage.getClass().getSimpleName()));
 
-        System.out.println(String.format(ORDER_MSG,
-                beverage.getDescription(), beverage.cost()));
+        System.out.println(String.format(ORDER_MSG, beverage.getDescription(), beverage.cost()));
+    }
+
+    @Test
+    public void create_orderDoesMatter_success() {
+        beverage = new Mocha(new Soy(new DarkRoast()));
+        System.out.println(String.format(ORDER_MSG, beverage.getDescription(), beverage.cost()));
+
+        beverage = new Soy(new Mocha(new DarkRoast()));
+        System.out.println(String.format(ORDER_MSG, beverage.getDescription(), beverage.cost()));
+
     }
 }
