@@ -11,3 +11,4 @@ The Design Pattern covered are:
 * Observer (`observer` module)
 * Strategy (`strategy` module)
 * Decorator (`decorator` module)
+* Singleton (`singleton` module)
